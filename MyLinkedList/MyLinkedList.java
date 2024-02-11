@@ -7,6 +7,10 @@ public class MyLinkedList<T> implements MyLinkedListInterface<T> {
     public Node<T> last;
     private int listSize = 0;
 
+    public int getListSize () {
+        return listSize;
+    }
+
     public void addToFirst (T element) {
         Node<T> newNode = new Node<T>();
         newNode.element = element;
